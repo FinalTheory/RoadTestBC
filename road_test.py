@@ -79,7 +79,7 @@ class Worker(object):
 			conn.request('PUT', '/deas-api/v1/webLogin/webLogin', json_body, headers)
 			response = conn.getresponse()
 			token = response.getheader('Authorization')
-			# print('get token ', token)
+			print('get token ', token)
 			self.token = token
 		except:
 			self.token = None
