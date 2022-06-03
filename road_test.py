@@ -12,10 +12,12 @@ import requests
 from time import sleep
 from dateutil.parser import parse
 
-TEST_LOCATION_ID = [(2, "Burnaby"), (274, "Burnaby")]
+# keep only the location IDs you need and remove others
+TEST_LOCATION_ID = [(2, "Burnaby"), (274, "Burnaby BCIT"), (153, "Langley"), (73, "Port Coquitlam"), (11, "Surrey"), (8, "North Vancouver"), (93, "Richmond")]
 
 # examl type
 # 5-R-1: class 5
+# 6-R-1: class 6 motorcycle
 EXAM_TYPE = "5-R-1"
 LAST_NAME = ""
 # your driver license ID
