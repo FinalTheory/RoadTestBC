@@ -11,3 +11,9 @@ A simple script to help your road test.
 1. Ready to go!
 
 Notice: macOS only.
+
+## pack it into executable
+
+```shell
+pyinstaller road_test.py --console --onefile
+```
