@@ -81,7 +81,7 @@ class Worker(object):
 			conn.request('PUT', '/deas-api/v1/webLogin/webLogin', json_body, headers)
 			response = conn.getresponse()
 			token = response.getheader('Authorization')
-			print('get token ', token)
+			print('Check date range {} at location {}. Get token {}'.format(DATE_RANGE, TEST_LOCATION_ID, token))
 			self.token = token
 		except:
 			self.token = None
